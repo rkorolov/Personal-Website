@@ -1,4 +1,9 @@
+"use client";
+import { usePathname } from "next/navigation";
+
 export default function Footer() {
+    const pathname = usePathname();
+    if (pathname != "/studio") {
     return (
       <nav className="bg-secondary-200 rounded-lg shdow m-4 dark:bg-amber-400 place-content-end absolute inset-x-0 bottom-0">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
@@ -24,4 +29,5 @@ export default function Footer() {
         
       </nav>
     );
+    }
   }
