@@ -1,25 +1,47 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <Footer />
+
+
+    </div>
+    
+    
   );
 }
 
-function Navbar() {
+
+
+function Footer() {
   return (
-    <nav className="border-b-4 sticky top-0 bg-lime-600 text-amber-100 border-lime-600 z-10">
-      <div className="h-14 max-w-7xl p-4 mx-auto flex items-center justify-between">
-        <a href="/" className="font-medium text-lg md:hover:underline">
-          My Website
-        </a>
-        <ul className="hidden md:flex items-center justify-end space-x-4 text-sm font-medium">
-          <li className="md:hover:underline">
-            <a href="/blog">Blog</a>
+    <nav className="bg-amber-100 rounded-lg shdow m-4 dark:bg-amber-400 place-content-end absolute inset-x-0 bottom-0">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-pink-400 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+      </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-pink-400 dark:text-gray-400 sm:mt-0">
+          <ul class="list-image-[git.png]">
+
+          </ul>
+          <li>
+
+              <a href="#" class="hover:text-pink-600 me-4 md:me-6">About</a>
           </li>
-          <li className="md:hover:underline">
-            <a href="/photos">Photos</a>
+          <li>
+              <a href="#" class="hover:text-pink-600 me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:text-pink-600 me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a href="#" class="hover:text-pink-600">Contact</a>
           </li>
         </ul>
       </div>
+      
     </nav>
   );
 }
+
