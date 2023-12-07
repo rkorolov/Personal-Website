@@ -1,4 +1,4 @@
-import { Short_Stack } from 'next/font/google'
+import { Comic_Neue, Short_Stack } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'

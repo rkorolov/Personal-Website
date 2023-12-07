@@ -1,5 +1,10 @@
+import SectionHeader from "../components/SectionHeader";
+
 export default function Projects() {
     return (
-        <p>These are my projcts!</p>
+        <div>
+            <p>These are my projcts!</p>
+        </div>
+        
     );
 }
