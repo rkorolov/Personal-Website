@@ -14,6 +14,9 @@ export default function Navbar() {
             <li className="md:hover:text-secondary-400">
               <Link href="/photos">Photos</Link>
             </li>
+            <li className="md:hover:text-secondary-400">
+              <Link href="/projects">Projects</Link>
+            </li>
           </ul>
         </div>
       </nav>
