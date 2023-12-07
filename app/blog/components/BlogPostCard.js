@@ -1,5 +1,4 @@
 import { urlForImage } from "@/sanity/lib/image";
-import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import DatePill from "./DatePill";
@@ -11,7 +10,7 @@ export default function BlogPostCard({ post }) {
       className="space-y-4 md:hover:opacity-75 transition-opacity"
     >
       <Image
-        src={urlForImage(post.image).auto("format").size(1920, 1080).url()}
+        src={urlForImage(post.image)}
         width={1920}
         height={1080}
         alt={post.title}
