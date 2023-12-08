@@ -3,24 +3,21 @@ import SectionHeader from "./components/SectionHeader";
 import { FilledButton } from "./components/Buttons";
 import Container from "./components/Container";
 import imgAsset from "./icons/linkedin.ico";
+import me from "./icons/IMG_1204.JPG";
 
 export default function Home() {
   return (
-    <div>
-
-      <Container>
-      <SectionHeader title="welcome to my page!" text="text text"  />
+    <div class="flex flex-row flex-wrap bg-pink-50">
       <div className="p-8">
-      <Image src={imgAsset} alt="" width={80} height={200}/>
+        <SectionHeader title="welcome to my page!" text="text text"  />
       </div>
-      
-      </Container>
-      
-      
-      
 
+      <div className="p-8 right-0">
+        <Image class="rounded-full m-auto" src={me} alt="" width={200} height={200}/>
+      </div>
 
     </div>
+
     
     
   );

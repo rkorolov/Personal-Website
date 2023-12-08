@@ -11,18 +11,21 @@ export default function Navbar() {
     return (
       <nav className="border-b sticky top-0 bg-primary-200 text-pink-300 border-100 z-10">
         <div className="h-14 max-w-7xl p-4 mx-auto flex items-center justify-between">
-          <Link href="/" className="font-semibold text-lg md:hover:text-secondary-400">
-            ruslana korolov
+          <Link href="/" className="font-semibold font-serif text-2xl md:hover:text-secondary-400">
+            h o m e
           </Link>
           <ul className="hidden md:flex items-center justify-end  fonts-style: italic space-x-4 text-lg font-medium">
             <li className="md:hover:text-secondary-400">
-              <Link href="/blog">blog</Link>
+              <Link href="/blog">b l o g</Link>
             </li>
+            <p> | </p>
             <li className="md:hover:text-secondary-400">
-              <Link href="/photos">photos</Link>
+              <Link href="/photos">p h o t o s</Link>
             </li>
+            <p> | </p>
             <li className="md:hover:text-secondary-400">
-              <Link href="/projects">projects</Link>
+              <Link href="/projects">p r o j e c t s</Link>
+              
             </li>
           </ul>
         </div>
