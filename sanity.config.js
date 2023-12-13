@@ -10,6 +10,8 @@ import {deskTool} from 'sanity/desk'
 import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema/index'
 import { media } from 'sanity-plugin-media'
+import { codeInput } from '@sanity/code-input'
+
 
 export default defineConfig({
   basePath: '/studio',
@@ -23,6 +25,7 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
     media(),
+    codeInput(),
     
   ],
 })

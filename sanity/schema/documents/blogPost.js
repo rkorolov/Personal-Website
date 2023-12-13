@@ -1,4 +1,8 @@
+
+
+
 export default {
+
     name: "blogPost",
     title: "Blog Post",
     type: "document",
@@ -50,6 +54,11 @@ export default {
                 {
                     type: "image",
                 },
+                {
+                    type:"code"
+
+                },
+
             ],
         },
     ],
