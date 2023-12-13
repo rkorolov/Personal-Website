@@ -23,6 +23,7 @@ async function getBlogPosts() {
         "slug": slug.current,
         image,
         content
+        
       }`;
     
       const posts = await client.fetch(query);
