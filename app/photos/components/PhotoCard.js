@@ -14,7 +14,7 @@ export default function PhotoCard({ photo: { title, image, favorite } }) {
       />
       <h2 className="font-semibold flex text-lg text-center space-y-4">
         {title}
-        {favorite ? <p className="text-sm mr-2">⭐️</p> : null}
+        {favorite ? <p className="text-sm mr-2"> ⭐️</p> : null}
         
       </h2>
       
