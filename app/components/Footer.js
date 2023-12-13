@@ -1,11 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Footer() {
     const pathname = usePathname();
     if (pathname != "/studio") {
     return (
-      <nav className="bg-secondary-200 rounded-lg shdow m-4 dark:bg-amber-400 inset-x-0  bottom-0 font-semibold  ">
+      <nav className="bg-secondary-200 m-2 rounded-full dark:bg-amber-400 inset-x-0  bottom-0 font-medium">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         
         <span>
@@ -21,6 +22,7 @@ export default function Footer() {
                 </div>
             </li>
             <li>
+
                 <a href="https://www.linkedin.com/in/ruslana-korolov/" className="hover:text-pink-600 me-4 md:me-6">lets link!</a>
             </li>
           </ul>

@@ -1,9 +1,9 @@
-import { Comic_Neue, Short_Stack } from 'next/font/google'
+import { Comic_Neue, Eczar, Inknut_Antiqua, Playfair_Display, Proza_Libre, Short_Stack, Space_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const inter = Short_Stack({ subsets: ['latin'], weight:"400" })
+const inter = Proza_Libre({ subsets: ['latin'], weight:"400" })
 
 export const metadata = {
   title: "My Website",
