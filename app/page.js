@@ -17,7 +17,7 @@ export default function Home() {
           <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
               <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400 ">
                   <h2 class="mb-4 text-4xl tracking-tight text-primary-500">Current 
-                  <span class="font-extrabold text-primary-600 font-style: italic"> Involvements @ UW</span> </h2>
+                  <span class="font-extrabold text-primary-600 font-style: italic"> Activities  @ UW</span> </h2>
                   <p class="mb-4 font-thin">This and That.</p>
                   <p class="mb-4 font-bold">Expanding on that.</p>
                   <Link href="/projects" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
