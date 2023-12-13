@@ -1,5 +1,6 @@
 import SectionHeader from "../components/SectionHeader";
 
+
 export default function Projects() {
     return (
         <div class="ml-12 mt-4">

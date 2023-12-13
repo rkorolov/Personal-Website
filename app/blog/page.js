@@ -22,8 +22,6 @@ async function getBlogPosts() {
         date,
         "slug": slug.current,
         image,
-        content
-        
       }`;
     
       const posts = await client.fetch(query);

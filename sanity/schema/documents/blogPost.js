@@ -42,13 +42,11 @@ export default {
             },
         },
         {
-            name: "Content",
+            name: "content",
             title: "Content",
             type: "array",
             of: [
-                {
-                    type: "block",
-                },
+                {type: "block" },
                 {
                     type: "image",
                 },
