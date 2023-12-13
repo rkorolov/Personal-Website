@@ -12,7 +12,7 @@ export default function PhotoCard({ photo: { title, image, favorite } }) {
         alt={title}
         className="rounded-2xl border border-primary-400 md:group-hover:scale-95 transition-transform transform"
       />
-      <h2 className="font-semibold flex items-center justify-center text-lg ">
+      <h2 className="font-semibold flex text-lg text-center space-y-4">
         {favorite ? <p className="text-sm mr-2">⭐️</p> : null}
         {title}
       </h2>
