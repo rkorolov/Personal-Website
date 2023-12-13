@@ -1,3 +1,4 @@
+import DatePill from "@/app/blog/components/DatePill";
 import { urlForImage } from "@/sanity/lib/image";
 import Image from "next/image";
 
@@ -11,11 +12,11 @@ export default function PhotoCard({ photo: { title, image, favorite } }) {
         alt={title}
         className="rounded-2xl border border-primary-400 md:group-hover:scale-95 transition-transform transform"
       />
-      <h2 className="font-medium flex items-center justify-center font-sans">
+      <h2 className="font-semibold flex items-center justify-center text-lg ">
         {favorite ? <p className="text-sm mr-2">⭐️</p> : null}
         {title}
-        
       </h2>
+      
       
     </div>
   );

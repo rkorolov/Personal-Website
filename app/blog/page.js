@@ -26,7 +26,6 @@ async function getBlogPosts() {
     
       const posts = await client.fetch(query);
 
-      console.log(posts);
 
       return posts;
 }
