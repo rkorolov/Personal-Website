@@ -9,7 +9,7 @@ export default function Navbar() {
 
 
     return (
-      <nav className=" sticky top-0 mb-3 border-y-4 bg-primary-200 text-pink-300 border-100 z-10">
+      <nav className=" sticky top-0 mb-3  bg-lightsage text-cream  z-10">
         <div className="h-14 max-w-7xl p-4 mx-auto flex items-center justify-between">
           <Link href="/" className="font-semibold font-serif text-2xl md:hover:text-secondary-400">
             h o m e

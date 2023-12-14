@@ -15,6 +15,14 @@ module.exports = {
       primary: colors.lime,
       secondary: colors.amber,
       pink: colors.pink,
+      blue: colors.blue,
+      teal: colors.teal,
+      'offwhite': '#F2F1EB',
+      'cream': '#EEE7DA',
+      'sage':  '#88AB8E',
+      'lightsage': '#AFC8AD',
+
+
       
     },
     extend: {},

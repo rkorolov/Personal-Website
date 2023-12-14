@@ -7,13 +7,13 @@ export default function Footer() {
     const pathname = usePathname();
     if (pathname != "/studio") {
     return (
-      <nav className="bg-secondary-200 m-2 rounded-full dark:bg-amber-400 inset-x-0  bottom-0  font-style: italic">
+      <nav className="bg-lightsage m-2 rounded-full  inset-x-0  bottom-0  font-style: italic">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         
         <span>
-        <p className="text-pink-400">Ruslana Korolov &copy; {new Date().getFullYear()}</p>
+        <p className="text-cream">Ruslana Korolov &copy; {new Date().getFullYear()}</p>
         </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-bold text-pink-400 dark:text-gray-400 sm:mt-0">
+          <ul className="flex flex-wrap items-center mt-3 text-sm font-bold text-cream dark:text-gray-400 sm:mt-0">
             <ul className="list-image-[git.png]">
               
   
