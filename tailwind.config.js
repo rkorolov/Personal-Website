@@ -17,6 +17,7 @@ module.exports = {
       pink: colors.pink,
       blue: colors.blue,
       teal: colors.teal,
+      lime: colors.lime,
       'offwhite': '#F2F1EB',
       'cream': '#EEE7DA',
       'sage':  '#88AB8E',

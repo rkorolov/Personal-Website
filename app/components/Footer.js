@@ -13,19 +13,16 @@ export default function Footer() {
         <span>
         <p className="text-cream">Ruslana Korolov &copy; {new Date().getFullYear()}</p>
         </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-bold text-cream dark:text-gray-400 sm:mt-0">
-            <ul className="list-image-[git.png]">
-              
-  
-            </ul>
+          <ul className="flex flex-wrap items-center mt-3 text-sm font-bold text-cream sm:mt-0">
+
             <li >
                 <div className=" "> 
-                <a href="https://github.com/rkorolov" className="hover:text-pink-600 me-4 md:me-6">github</a>
+                <a href="https://github.com/rkorolov" className="hover:text-lime me-4 md:me-6">github</a>
                 </div>
             </li>
             <li>
 
-                <a href="https://www.linkedin.com/in/ruslana-korolov/" className="hover:text-pink-600 me-4 md:me-6">lets link!</a>
+                <a href="https://www.linkedin.com/in/ruslana-korolov/" className="hover:text-lime me-4 md:me-6">lets link!</a>
             </li>
           </ul>
           

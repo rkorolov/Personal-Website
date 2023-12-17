@@ -14,9 +14,10 @@ export default function HeroSection() {
                 </h1>
             
               <p class="max-w-2xl mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl font-mono ">Hey Stranger! I'm a <span class="text-sage">first year</span>  intended ECE major @ UW.</p>
+              <p class="max-w-2xl mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl font-mono ">I'm passionate about <span class="text-sage">web development</span>, <span class="text-sage">neurocomputing</span>, <span class="text-sage">photography</span>, and <span class="text-sage">Baldur's Gate 3</span> ! </p>
               
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <div class="hidden lg:mt-0 lg:col-span-5 px-8 lg:flex">
               <Image class="rounded-full border-sage border-8" src={me} alt="" height={400}/>
           </div>                
       </div>
