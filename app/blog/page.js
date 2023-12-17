@@ -1,5 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import BlogPostCard from "./components/BlogPostCard";
+import Footer2 from "../components/Footer2";
 
 
 
@@ -15,9 +16,7 @@ export default async function Blog() {
             ))}
             
           </div>
-          
-          
-      </div>
+          </div>
       </div>
       
       

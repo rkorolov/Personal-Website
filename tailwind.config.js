@@ -21,6 +21,7 @@ module.exports = {
       'cream': '#EEE7DA',
       'sage':  '#88AB8E',
       'lightsage': '#AFC8AD',
+      'lime': "#fefce8",
 
 
       
