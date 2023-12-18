@@ -1,10 +1,8 @@
 
 import HeroSection from "./components/HeroSection";
-import Link from "next/link";
-import SectionHeader from "./components/SectionHeader";
 import BlogPostCard from "./blog/components/BlogPostCard";
 import { client } from "@/sanity/lib/client";
-import Container from "./components/Container";
+
 
 export default async function Home() {
   const posts = await getBlogPosts();
