@@ -13,8 +13,8 @@ export default function HeroSection() {
                 <span class="">Welcome </span>to <span class="font-extrabold text-sage font-style: italic"> my Page</span>
                 </h1>
             
-              <p class="max-w-2xl mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl font-mono ">Hey Stranger! I'm a <span class="text-sage">first year</span>  intended ECE major @ UW.</p>
-              <p class="max-w-2xl mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl font-mono ">I'm passionate about <span class="text-sage">web development</span>, <span class="text-sage">neurocomputing</span>, <span class="text-sage">photography</span>, and <span class="text-sage">Baldur's Gate 3</span> ! </p>
+              <p class="max-w-2xl my-4 mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">Hey Stranger! I'm a <span class="text-sage">first year</span>  intended ECE major @ UW.</p>
+              <p class="max-w-2xl mb-6 ml-4  font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">I'm passionate about <span class="text-sage">web development</span>, <span class="text-sage">neurocomputing</span>, <span class="text-sage">photography</span>, and <span class="text-sage">Baldur's Gate 3</span> ! </p>
               
           </div>
           <div class="hidden lg:mt-0 lg:col-span-5 px-8 lg:flex">
