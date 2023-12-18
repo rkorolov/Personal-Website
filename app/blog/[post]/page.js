@@ -14,7 +14,7 @@ export default async function BlogPost({ params }) {
     <Container>
       <div className="mx-auto max-w-5xl space-y-8 py-8">
       <BlogPostHeader post={post} />
-      <hr className="border-primary-200" />
+      <hr className="border-sage border-4 rounded-md" />
       <article className="prose md:prose-md prose-primary mx-auto">
           <PortableText value={post.content} components={portableTextComponents} />
       </article>
