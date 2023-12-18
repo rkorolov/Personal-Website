@@ -1,6 +1,6 @@
 export function FilledButton({ children }) {
     return (
-      <DefaultButton style="bg-secondary-700 border-secondary-700 text-secondary-100 md:hover:bg-secondary-900 md:hover:border-secondary-900 md:hover:text-secondary-300">
+      <DefaultButton style="bg-sage border-lime text-lime md:hover:bg-transparent md:hover:border-sage md:hover:text-sage">
         {children}
       </DefaultButton>
     );
@@ -8,7 +8,7 @@ export function FilledButton({ children }) {
   
   export function OutlinedButton({ children }) {
     return (
-      <DefaultButton style="border-primary-200 text-primary-200 md:hover:border-primary-400 md:hover:text-primary-400">
+      <DefaultButton style="border-lightsage text-sage   md:hover:border-transparent md:hover:bg-sage md:hover:text-lime">
         {children}
       </DefaultButton>
     );
@@ -17,7 +17,7 @@ export function FilledButton({ children }) {
   function DefaultButton({ children, style }) {
     return (
       <button
-        className={`inline font-medium bg-transparent border rounded-full md:px-4 px-3.5 md:py-2 py-1.5 md:text-base text-sm transition-colors ${style}`}
+        className={`inline font-medium  border-2 rounded-full md:px-4 px-3.5 md:py-2 py-1.5 md:text-base text-sm transition-colors ${style}`}
       >
         {children}
       </button>
