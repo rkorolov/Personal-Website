@@ -21,20 +21,27 @@ export default async function Home() {
                   <h2 class="mb-4 text-4xl tracking-tight text-lime">Current 
                   <span class="font-extrabold  font-style: italic"> Activities  @ UW</span> </h2>
                   <p class="mb-0  text-lime"> Greek Social Chair @ 
-                  <a href="https://www.phisigmarho.org/" class="font-style: italic inline-flex items-center hover:text-white ml-2 "> 
+                  <a href="https://www.phisigmarho.org/" class="font-style: italic inline-flex items-center hover:text-white ml-1 "> 
                     <span class="font-bold font-style: italic">Phi Sigma Rho</span><svg class="ml-0 w-5 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                   
                     </a>
                   </p>
                   <ul class="text-lime list-disc ml-4 mb-4 font-thin">
                     <li>Planning and managing events with sororities and fraternities. </li>
+                  </ul>
 
-                    
+                  <p class="mb-0  text-lime"> Member @ <span class="font-extrabold  font-style: italic">Web Impact</span> </p> 
+                  <ul class="text-lime list-disc ml-4 mb-4 font-thin">
+                    <li>Attending workshops to strengthen coding skills</li>
+                  </ul>
+
+                  <p class="mb-0  text-lime"> Member @ <span class="font-extrabold  font-style: italic">SynapTech</span> </p> 
+                  <ul class="text-lime list-disc ml-4 mb-4 font-thin">
+                    <li>Developing projects using neural interfaces</li>
                   </ul>
 
 
-                  <p class="mb-4 font-thin text-lime">This and That.</p>
-                  <p class="mb-4 font-bold text-lime">Expanding on that.</p>
+              
                   
                   {/* <Link href="/projects" class="inline-flex items-center font-medium text-sage hover:text-primary-800">
                       More About My Projects
