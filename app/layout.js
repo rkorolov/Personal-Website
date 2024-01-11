@@ -2,7 +2,7 @@ import { Comic_Neue, Eczar, Inknut_Antiqua, Playfair_Display, Proza_Libre, Short
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { Analytics } from '@vercel/analytics'
+import  Analytics  from '@vercel/analytics'
 
 const inter = Proza_Libre({ subsets: ['latin'], weight:"400" })
 
