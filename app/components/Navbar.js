@@ -23,11 +23,11 @@ export default function Navbar() {
               <Link href="/photos">p h o t o s</Link>
             </li>
 
-            {/* <p> | </p>
+            <p> | </p>
             <li className="md:hover:text-secondary-400">
               <Link href="/projects">p r o j e c t s</Link>
               
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>
