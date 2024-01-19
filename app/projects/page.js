@@ -8,8 +8,10 @@ export default function Projects() {
         <div class="flex justify-center h-full">
 
 
-            {/* <iframe class="h-screen w-3/4 rounded-md border-sage "  src="https://e.notionhero.io/e1/p/03745f1-5e5dc803afe758370b87588a0866370"></iframe>
-             */}
+            
+            <iframe class="h-screen w-2/3 rounded-md border-sage " src="https://e.notionhero.io/e1/p/4be2668-44c4562a69e869f1ede1b20aeb910eb"></iframe>
+
+             
             
 
         </div>
