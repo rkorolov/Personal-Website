@@ -34,7 +34,7 @@ export default async function Projects() {
               <ProjectPostCard key={post.slug} post={post} />
               
             ))}
-            console.log(posts)
+            
             
           </div>
           </div>

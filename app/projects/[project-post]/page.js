@@ -26,7 +26,7 @@ export default async function ProjectPost({ params }) {
 
 
 async function getProjectPost(slug) {
-  const query = `*[_type == "projectPost" && slug.current == $slug][0]  {
+  const query = `*[_type == "projectPost" ][0]  {
     title,
     description,
     date,
