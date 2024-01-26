@@ -1,5 +1,6 @@
 import Container from "@/app/components/Container";
 import PostHeader from "./components/postHeader";
+import { client } from "@/sanity/lib/client";
 
 export default async function projectPost( { params }) {
     const post = await getPosts(params.post);
