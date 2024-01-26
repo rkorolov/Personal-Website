@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 
 
-export default async function BlogPost({ params }) {
+export default async function ProjectPost({ params }) {
   // const { post } = params;
-  const post = await getBlogPost(params.post);
+  const post = await getProjectPost(params.post);
 
   
   return (
@@ -25,7 +25,7 @@ export default async function BlogPost({ params }) {
 
 
 
-async function getBlogPost(slug) {
+async function getProjectPost(slug) {
   const query = `*[_type == "projectPost" && slug.current == $slug][0]  {
     title,
     description,

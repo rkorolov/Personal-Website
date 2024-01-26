@@ -32,7 +32,9 @@ export default async function Projects() {
           <div className="grid gird-cols-1 md:grid-cols-3 gap-4">
             {posts.map((post) => (
               <ProjectPostCard key={post.slug} post={post} />
+              
             ))}
+            console.log(posts)
             
           </div>
           </div>
