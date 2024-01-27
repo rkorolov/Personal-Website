@@ -2,7 +2,7 @@
 import { urlForImage } from "@/sanity/lib/image";
 import Image from "next/image";
 
-export default function PhotoCard({ photo: { title, image, favorite } }) {
+export default function ProjectCard({ project: { title, image, favorite } }) {
   return (
     <div className="space-y-2 group">
       <Image
