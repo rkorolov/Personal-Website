@@ -1,6 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import BlogPostCard from "./components/BlogPostCard";
-import Footer2 from "../components/Footer2";
+
 
 
 
