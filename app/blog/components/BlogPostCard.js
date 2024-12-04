@@ -26,5 +26,6 @@ export default function BlogPostCard({ post }) {
         </div>
       </div>
     </Link>
+    sout
   );
 }
