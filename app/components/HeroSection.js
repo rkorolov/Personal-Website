@@ -26,9 +26,9 @@ export default function HeroSection() {
               
               <div class="inline-flex ml-3">
                 <div class="pr-4">
-                <FilledButton > <Link href="/blog">Blog</Link></FilledButton>
+                <FilledButton > <Link href="/blog">Projects</Link></FilledButton>
                 </div>
-                <OutlinedButton> <Link href="/photos">Photos</Link> </OutlinedButton>
+                <FilledButton> <Link href="/photos">Photos</Link> </FilledButton>
             </div>
 
              

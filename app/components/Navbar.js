@@ -17,18 +17,19 @@ export default function Navbar() {
 
           <ul className="flex justify-end  fonts-style: italic space-x-4 text-lg font-medium">
             <li className="hover:text-lime">
-              <Link href="/blog">b l o g</Link>
+              <Link href="/blog">p r o j e c t s</Link>
             </li>
             <p class="text-sage"> | </p>
             <li className="hover:text-lime">
               <Link href="/photos">p h o t o s</Link>
             </li>
 
-            <p class="text-sage"> | </p>
+            {/* <p class="text-sage"> | </p>
             <li className="hover:text-lime">
               <Link href="/projects">p r o j e c t s</Link>
               
-            </li>
+            </li> */}
+
           </ul>
         </div>
 
