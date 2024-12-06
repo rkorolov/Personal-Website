@@ -61,5 +61,13 @@ export default {
 
             ],
         },
+        {
+            name: "tag",
+            title: "Type",
+            type: "tag",
+            options: {
+                predefinedTags: { label: "Type", value: "blue"}
+            },
+        }
     ],
 }
