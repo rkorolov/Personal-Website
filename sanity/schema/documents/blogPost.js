@@ -66,7 +66,11 @@ export default {
             title: "Type",
             type: "tag",
             options: {
-                predefinedTags: { label: "Type", value: "blue"}
+                predefinedTags: [
+                    { label: "Hackathon", value: "hackathon"},
+                    { label: "Personal", value: "personal"},
+                    { label: "Research", value: "research"},
+                ]
             },
         }
     ],
