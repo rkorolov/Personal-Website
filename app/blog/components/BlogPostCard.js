@@ -21,11 +21,16 @@ export default function BlogPostCard({ post }) {
           <div className="flex flex-row justify-between">
           <h2 className="text-lg font-semibold">{post.title}</h2>
           <DatePill date={post.date} />
+          <p className="text-xs font-medium px-2 py-1 rounded-full bg-sage text-cream inline">
+            {post.tag}
+          </p>
           </div>
           
           <p className="line-clamp-1 text-sm text-sage">
             {post.description}
           </p>
+
+
         </div>
       </div>
     </Link>
