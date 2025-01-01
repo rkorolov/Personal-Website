@@ -28,7 +28,17 @@ export default async function Home() {
                   <ul class="text-lime list-disc ml-4 mb-4 font-thin">
                     <li>Working on interfacing a muShr car with Modulated Noise Communication (MNC).</li>
                   </ul>
+
+                  <p class="mb-0  text-lime"> WebMaster @ <span class="font-extrabold  font-style: italic"><a href="https://washingtonyachtclub.org/" class="font-style: italic inline-flex items-center hover:text-white ml-1 "> 
+                    <span class="font-bold font-style: italic">Washington Yacht Club</span><svg class="ml-0 w-5 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                    </a></span> 
+                  </p> 
+                  <ul class="text-lime list-disc ml-4 mb-4 font-thin">
+                    <li>Update features & create content for the WYC website</li>
+                  </ul>
                   
+
+
                   <p class="mb-0  text-lime"> Greek Social Chair @ 
                   <a href="https://www.phisigmarho.org/" class="font-style: italic inline-flex items-center hover:text-white ml-1 "> 
                     <span class="font-bold font-style: italic">Phi Sigma Rho</span><svg class="ml-0 w-5 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
@@ -39,13 +49,7 @@ export default async function Home() {
                     <li>Planning and managing events with sororities and fraternities. </li>
                   </ul>
 
-                  <p class="mb-0  text-lime"> WebMaster @ <span class="font-extrabold  font-style: italic"><a href="https://washingtonyachtclub.org/" class="font-style: italic inline-flex items-center hover:text-white ml-1 "> 
-                    <span class="font-bold font-style: italic">Washington Yacht Club</span><svg class="ml-0 w-5 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                    </a></span> 
-                  </p> 
-                  <ul class="text-lime list-disc ml-4 mb-4 font-thin">
-                    <li>Update features & create content for the WYC website</li>
-                  </ul>
+                  
 
                   <p class="mb-0  text-lime"> Social Media & Outreach @ <span class="font-extrabold  font-style: italic">SynapTech</span> </p> 
                   <ul class="text-lime list-disc ml-4 mb-4 font-thin">
