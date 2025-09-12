@@ -2,6 +2,7 @@ import Image from "next/image";
 // import me from "../icons/IMG_1204.JPG";
 import me from "../icons/profile_pic.png";
 
+
 import Link from "next/link";
 import { FilledButton, OutlinedButton } from "./Buttons";
 

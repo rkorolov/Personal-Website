@@ -2,8 +2,20 @@
 import { useState } from "react";
 import { urlForImage } from "@/sanity/lib/image";
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import Link from "next/link";
 
-export default function ProjectCard() {
+
+
+
+/* import all the icons in Free Solid, Free Regular, and Brands styles */
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fas, far, fab)
+
+export default function ProjectCard({title, descr, link, link_name, date}) {
   // return (
     // <div className="space-y-2 group">
     //   <Image
@@ -27,18 +39,24 @@ export default function ProjectCard() {
         setShown(!shown);
     }
     return (
-        <div class="flex justify-end w-2/3 text-left h-full flex-col m-auto">
+        <div class="flex justify-end text-left h-full flex-col m-auto">
 
             {/* drop down menus */}
-            <div class="flex justify-start flex-row gap-x-5">
-            <button class='bg-primary-200 px-4 rounded-lg' onClick={toggle} >Toggle</button>
-            <h1 class="py-2">Project Title</h1>
+            <div class="flex justify-start flex-row gap-x-2">
+            <i class="fa-regular fa-square-caret-down"></i>
+            <button class=' rounded-lg' onClick={toggle}><FontAwesomeIcon icon="fa-regular fa-square-caret-down" size="1x"/></button>
+            <div class="flex flex-row items-center space-x-2">
+                <h1 class="py-2">{title}</h1>
+                <p class="font-style: italic text-xs">{date}</p>
+            </div>
+           
             
             </div>
-            <div class="" style={{
+            <div class="px-9 flex flex-col" style={{
                 display: shown ? "flex" : "none",
             }}>
-                Ex. Project
+                <p>{descr}</p>
+                <a target='_blank' rel="noopener" href={link}>{link_name}</a>
             </div>
 
             
