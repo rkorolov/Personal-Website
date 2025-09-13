@@ -55,8 +55,8 @@ export default function ProjectCard({title, descr, link, link_name, date}) {
             <div class="px-9 flex flex-col" style={{
                 display: shown ? "flex" : "none",
             }}>
-                <p>{descr}</p>
-                <a target='_blank' rel="noopener" href={link}>{link_name}</a>
+                <p class="text-sm font-style: italic">{descr}</p>
+                <a class="text-sm" target='_blank' rel="noopener" href={link}>{link_name}</a>
             </div>
 
             

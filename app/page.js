@@ -50,8 +50,8 @@ export default async function Home() {
         <p class="py-2 text-lg font-style: italic">Hey Stranger!</p>
         <div class="pb-4">
           <p class="pb-2">I'm Ruslana, a third year majoring in 
-            <span class="font-bold">Electrical & Computer Engineering</span> major & minoring in 
-            <span class="font-bold">Applied Math</span> @ UW.</p>
+            <span class="font-bold"> Electrical & Computer Engineering</span> & minoring in  
+            <span class="font-bold"> Applied Math</span> @ UW.</p>
         </div>  
 
         <p class="text-3xl pb-2">work experience</p>
@@ -83,11 +83,24 @@ export default async function Home() {
             <ul>
               <li><ProjectCard title="RF Harvester" descr="descr" link="https://docs.google.com/presentation/d/1qMhUmnOYmW8eBreNw60mEJYZoqtzFpsS_9COkfWaucQ/edit?usp=sharing" link_name="slides"/></li>
             </ul>
+
+            <p class="font-style: italic">Misc</p>
+            <ul>
+              <li><ProjectCard title="Website for MESH" descr="website for a UW Student Organization" /></li>
+              <li><ProjectCard title="Buddy Recommendation System for Eat Together" descr="descr"/></li>
+            </ul>
           
           </ul>
           
           
         </div>
+
+        <p class="text-3xl pb-2">organizations</p>
+        <ul>
+          <li>Phi Sigma Rho - <span class="font-style: italic">Greek Social Chair</span></li>
+          <li>Washington Yacht Club - <span class="font-style: italic">Website & Database Manager</span></li>
+          <li>Society of Woman Engineers - <span class="font-style: italic">Member</span></li>
+        </ul>
 
 
         <div>
