@@ -10,8 +10,8 @@ config.autoAddCss = false
 const inter = Proza_Libre({ subsets: ['latin'], weight:"400" })
 
 export const metadata = {
-  title: "My Website",
-  description: "Welcome to my website!",
+  title: "ruslana korolov",
+  description: "ruslana korolov",
 }
 
 export default function RootLayout({ children }) {
