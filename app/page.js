@@ -74,20 +74,20 @@ export default async function Home() {
           <ul>
             <p class="font-style: italic">Hackathons</p>
             <ul>
-              <li><ProjectCard title="Lumivita" date="(Hacktech '25)" descr="descr" link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
-              <li><ProjectCard title="DubGrind" date="(Open Source AI '25)" descr="descr" link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
-              <li><ProjectCard title="QuestForge" date="(DubHacks '24)" descr="descr" link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
-              <li><ProjectCard title="BrainVoyager" date="(NeuroHackathon '24)" descr="descr" link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
+              <li><ProjectCard title="Lumivita" date="(Hacktech '25)" descr="A full-stack healthcare platform with tailored interfaces for patients and caregivers." link="https://github.com/rkorolov/lumivita" link_name="github"/></li>
+              <li><ProjectCard title="DubGrind" date="(Open Source AI '25)" descr="A Discord bot powered by an AI agent designed to supercharge productivity and allows students to study smarter, not harder." link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
+              <li><ProjectCard title="QuestForge" date="(DubHacks '24)" descr="A RPG game that intertwines the typical quests that you would play through while staying on top of your schoolwork, physical wellbeing, and emotional wellness." link="https://github.com/itsrobel/QuestForge" link_name="github"/></li>
+              <li><ProjectCard title="BrainVoyager" date="(NeuroHackathon '24)" descr="A new a way to view data visualizations in a 3D space to encourage data literacy by providing an engaging medium." link="https://github.com/rkorolov/brain-voyager-host" link_name="github"/></li>
             </ul>
             <p class="font-style: italic">Research</p>
             <ul>
-              <li><ProjectCard title="RF Harvester" descr="descr" link="https://docs.google.com/presentation/d/1qMhUmnOYmW8eBreNw60mEJYZoqtzFpsS_9COkfWaucQ/edit?usp=sharing" link_name="slides"/></li>
+              <li><ProjectCard title="RF Harvester" descr="A research project focusing on creating an optimized design for an existing RF Harvester." link="https://docs.google.com/presentation/d/1qMhUmnOYmW8eBreNw60mEJYZoqtzFpsS_9COkfWaucQ/edit?usp=sharing" link_name="slides"/></li>
             </ul>
 
             <p class="font-style: italic">Misc</p>
             <ul>
-              <li><ProjectCard title="Website for MESH" descr="website for a UW Student Organization" /></li>
-              <li><ProjectCard title="Buddy Recommendation System for Eat Together" descr="descr"/></li>
+              <li><ProjectCard title="Website for MESH" descr="Full stack website for a UW Student Organization." /></li>
+              <li><ProjectCard title="Buddy Recommendation System for Eat Together" descr="Worked on creating a buddy recommendation feature for the Eat Together app."/></li>
             </ul>
           
           </ul>
