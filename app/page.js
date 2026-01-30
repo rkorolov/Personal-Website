@@ -1,7 +1,7 @@
 
 import HeroSection from "./components/HeroSection";
 import BlogPostCard from "./blog/components/BlogPostCard";
-import { client } from "@/sanity/lib/client";
+// import { client } from "@/sanity/lib/client";
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,98 +16,102 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Image from "next/image";
 import ProjectCard from "./projects/components/ProjectCard";
+import TableOfContents from "./components/tableOfContents";
 library.add(fas, far, fab)
 
 
 export default async function Home() {
-  const posts = await getBlogPosts();
-  console.log({posts});
-  return (
-    <div class="flex w-screen h-screen">
-      <title>Hello World!</title>
-      <div id="sidebar" class="bg-lime w-1/3 max-l-screen h-full text-center flex flex-col p-4 space-y-2 justify-center items-center content-center">
-        <div class="h-2/3">
-        <Image class="align-center" src={profile} width={200} height={200}></Image>
-        <p class="text-lg">Ruslana Korolov</p>
-        <p class="text-med font-style: italic">Undergraduate</p>
-        <p class="text-med">University of Washington</p>
-        <a href="malito:rkorol@uw.edu"><p class="text-sm">rkorol [at] uw.edu</p></a>
+  // const posts = await getBlogPosts();
+  // console.log({posts});
 
-        <div id="links" class="flex flex-row text-center justify-center space-x-4 fa-2xs ">
-          <Link href="https://github.com/rkorolov" target='_blank' rel="noopener" passHref>
-            <FontAwesomeIcon icon="fa-brands fa-github "  size="4x"/>
-          </Link>
-          <Link href="https://www.linkedin.com/in/ruslana-korolov/" target='_blank' rel="noopener" passHref>
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" size="4x"/>
-          </Link>
+  return (
+    <div class="flex min-h-screen w-full max-w-8xl  flex-col items-center justify-between py-32 px-16">
+
+      <div id="hero" class="w-1/3 max-l-screen h-full text-center flex flex-col p-4 space-y-2 justify-center items-center content-center">
+        <div class="h-2/3">
+          <Image class="align-center" src={profile} width={200} height={200}></Image>
+          <p class="text-lg">Ruslana Korolov</p>
+          <p class="text-med font-style: italic">Undergraduate</p>
+          <p class="text-med">University of Washington</p>
+          <a href="malito:rkorol@uw.edu"><p class="text-sm">rkorol [at] uw.edu</p></a>
+
+          <div id="links" class="flex flex-row text-center justify-center space-x-4 fa-2xs ">
+            <Link href="https://github.com/rkorolov" target='_blank' rel="noopener" passHref>
+              <FontAwesomeIcon icon="fa-brands fa-github "  size="4x"/>
+            </Link>
+            <Link href="https://www.linkedin.com/in/ruslana-korolov/" target='_blank' rel="noopener" passHref>
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" size="4x"/>
+            </Link>
+          </div>
         </div>
-        </div>
-        
       </div>
 
-      <div id="main" class=" w-full h-full border-l-2 border-dashed py-8 px-10">
+      <div id="main" class=" w-2/3 h-full py-8 px-10 flex flex-col justify-center content-center">
         <p class="text-3xl">all about me!</p>
         <p class="py-2 text-lg font-style: italic">Hey Stranger!</p>
-        <div class="pb-4">
+
+        <div id="intro" class="pb-4">
           <p class="pb-2">I'm Ruslana, a third year majoring in 
             <span class="font-bold"> Electrical & Computer Engineering</span> & minoring in  
-            <span class="font-bold"> Applied Math</span> @ UW.</p>
+            <span class="font-bold"> Applied Math</span> @ UW.
+          </p>
         </div>  
 
-        <p class="text-3xl pb-2">work experience</p>
+        <div id="experience" class="pb-4">
+          <p class="text-3xl pb-2">work experience</p>
 
-        <div class=" space-y-2 pb-4">
-          <div class="flex flex-row space-x-4 items-center">
-            
-            <p>Jr SDE [at] Amazon</p>
-            <p class="font-style: italic text-xs">(current)</p>
+          <div class=" space-y-2 pb-4">
+            <div class="flex flex-row space-x-4 items-center">
+              
+              <p>Jr SDE [at] Amazon</p>
+              <p class="font-style: italic text-xs">(current)</p>
+            </div>
+
+            <p>Lead Teaching Assistant [at] Paul G Allen School of Computer Science & Engineering</p>
+            <ul class="pl-8 list-disc">
+              <li>CSE121 x4</li>
+            </ul>
           </div>
-          <p>Lead Teaching Assistant [at] Paul G Allen School of Computer Science & Engineering</p>
-          <ul class="pl-8 list-disc">
-            <li>CSE121 x3</li>
-          </ul>
         </div>
 
         {/* TODO: Add filtering ability, (1) make project card components */}
-        <p class="text-3xl pb-2">projects</p>
-        <div>
+        <div id="projects" class="pb-4 flex flex-col">
+          <p class="text-3xl pb-2">projects</p>
+            
+
+            <p class="font-style: italic text-xl">Hackathons</p>
+              <div id="hackathons" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-8 justify-items-stretch">
+                  <ProjectCard title="Tides" date="(WINFO '26)" descr="Case study on an accessibility focused navigation app." link="https://tidal-wave.vercel.app/" link_name="website" type="hackathon"/>
+                  <ProjectCard title="Lumivita" date="(Hacktech '25)" descr="A full-stack healthcare platform with tailored interfaces for patients and caregivers." link="https://github.com/rkorolov/lumivita" link_name="github" type="hackathon"/>
+                  <ProjectCard title="DubGrind" date="(Open Source AI '25)" descr="A Discord bot powered by an AI agent designed to supercharge productivity and allows students to study smarter, not harder." link="https://github.com/rkorolov/dubGrind" link_name="github" type="hackathon"/>
+                  <ProjectCard title="QuestForge" date="(DubHacks '24)" descr="A RPG game that intertwines the typical quests that you would play through while staying on top of your schoolwork, physical wellbeing, and emotional wellness." link="https://github.com/itsrobel/QuestForge" link_name="github" type="hackathon"/>
+                  <ProjectCard title="BrainVoyager" date="(NeuroHackathon '24)" descr="A new a way to view data visualizations in a 3D space to encourage data literacy by providing an engaging medium." link="https://github.com/rkorolov/brain-voyager-host" link_name="github" type="hackathon"/>
+
+              </div>
+
+
+              <p class="font-style: italic text-xl">Research</p>
+              <div id="research" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-8 justify-items-stretch">
+                <ProjectCard title="RF Harvester" descr="A research project focusing on creating an optimized design for an existing RF Harvester." link="https://docs.google.com/presentation/d/1qMhUmnOYmW8eBreNw60mEJYZoqtzFpsS_9COkfWaucQ/edit?usp=sharing" link_name="slides" type="research"/>
+              </div>
+
+              <p class="font-style: italic text-xl">Misc</p>
+              <div id="misc" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4 justify-items-stretch">
+                <ProjectCard title="Website for MESH" descr="Full stack website for a UW Student Organization." type="misc"/>
+                <ProjectCard title="Buddy Recommendation System for Eat Together" descr="Worked on creating a buddy recommendation feature for the Eat Together app." type="misc"/>
+              </div>
+
+        </div>
+
+
+        <div id="organizations" class="pb-4">
+          <p class="text-3xl pb-2">organizations</p>
           <ul>
-            <p class="font-style: italic">Hackathons</p>
-            <ul>
-              <li><ProjectCard title="Lumivita" date="(Hacktech '25)" descr="A full-stack healthcare platform with tailored interfaces for patients and caregivers." link="https://github.com/rkorolov/lumivita" link_name="github"/></li>
-              <li><ProjectCard title="DubGrind" date="(Open Source AI '25)" descr="A Discord bot powered by an AI agent designed to supercharge productivity and allows students to study smarter, not harder." link="https://github.com/rkorolov/dubGrind" link_name="github"/></li>
-              <li><ProjectCard title="QuestForge" date="(DubHacks '24)" descr="A RPG game that intertwines the typical quests that you would play through while staying on top of your schoolwork, physical wellbeing, and emotional wellness." link="https://github.com/itsrobel/QuestForge" link_name="github"/></li>
-              <li><ProjectCard title="BrainVoyager" date="(NeuroHackathon '24)" descr="A new a way to view data visualizations in a 3D space to encourage data literacy by providing an engaging medium." link="https://github.com/rkorolov/brain-voyager-host" link_name="github"/></li>
-            </ul>
-            <p class="font-style: italic">Research</p>
-            <ul>
-              <li><ProjectCard title="RF Harvester" descr="A research project focusing on creating an optimized design for an existing RF Harvester." link="https://docs.google.com/presentation/d/1qMhUmnOYmW8eBreNw60mEJYZoqtzFpsS_9COkfWaucQ/edit?usp=sharing" link_name="slides"/></li>
-            </ul>
-
-            <p class="font-style: italic">Misc</p>
-            <ul>
-              <li><ProjectCard title="Website for MESH" descr="Full stack website for a UW Student Organization." /></li>
-              <li><ProjectCard title="Buddy Recommendation System for Eat Together" descr="Worked on creating a buddy recommendation feature for the Eat Together app."/></li>
-            </ul>
-          
+            <li>Phi Sigma Rho - <span class="font-style: italic">Greek Social Chair</span></li>
+            <li>Washington Yacht Club - <span class="font-style: italic">Website & Database Manager</span></li>
+            <li>Society of Woman Engineers - <span class="font-style: italic">Member</span></li>
           </ul>
-          
-          
         </div>
-
-        <p class="text-3xl pb-2">organizations</p>
-        <ul>
-          <li>Phi Sigma Rho - <span class="font-style: italic">Greek Social Chair</span></li>
-          <li>Washington Yacht Club - <span class="font-style: italic">Website & Database Manager</span></li>
-          <li>Society of Woman Engineers - <span class="font-style: italic">Member</span></li>
-        </ul>
-
-
-        <div>
-        </div>
-      </div>
-
-      <div>
 
       </div>
     </div>
