@@ -1,6 +1,4 @@
 
-import HeroSection from "./components/HeroSection";
-import BlogPostCard from "./blog/components/BlogPostCard";
 // import { client } from "@/sanity/lib/client";
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,8 +19,6 @@ library.add(fas, far, fab)
 
 
 export default async function Home() {
-  // const posts = await getBlogPosts();
-  // console.log({posts});
 
   return (
     <div class="flex min-h-screen w-full max-w-8xl  flex-col items-center justify-between py-32 px-16">
@@ -37,10 +33,10 @@ export default async function Home() {
 
           <div id="links" class="flex flex-row text-center justify-center space-x-4 fa-2xs ">
             <Link href="https://github.com/rkorolov" target='_blank' rel="noopener" passHref>
-              <FontAwesomeIcon icon="fa-brands fa-github "  size="4x"/>
+              <FontAwesomeIcon icon="fa-brands fa-github "  size="4x" className="hover:text-purple-800 transition-colors duration-300"/>
             </Link>
             <Link href="https://www.linkedin.com/in/ruslana-korolov/" target='_blank' rel="noopener" passHref>
-              <FontAwesomeIcon icon="fa-brands fa-linkedin" size="4x"/>
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" size="4x" className="hover:text-blue-800 transition-colors duration-300"/>
             </Link>
           </div>
         </div>
@@ -51,8 +47,8 @@ export default async function Home() {
         <p class="py-2 text-lg font-style: italic">Hey Stranger!</p>
 
         <div id="intro" class="pb-4">
-          <p class="pb-2">I'm Ruslana, a third year majoring in 
-            <span class="font-bold"> Electrical & Computer Engineering</span> & minoring in  
+          <p class="pb-2">I'm Ruslana, a third year majoring in  
+             <a href="https://www.ece.uw.edu/" class="font-bold text-shadow-lg/30 hover:text-purple-800"> Electrical & Computer Engineering</a> & minoring in  
             <span class="font-bold"> Applied Math</span> @ UW.
           </p>
         </div>  
@@ -112,6 +108,8 @@ export default async function Home() {
             <li>Society of Woman Engineers - <span class="font-style: italic">Member</span></li>
           </ul>
         </div>
+
+        <TableOfContents />
 
       </div>
     </div>

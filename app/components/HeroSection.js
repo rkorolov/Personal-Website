@@ -12,7 +12,7 @@ export default function HeroSection() {
 
     return (
       
-      <section class=" mx-2 " >
+      <section id="hero" class=" mx-2 " >
       <div class="grid max-w-screen-xl space-x-10  mx-2 lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12"> 
       
           <div class="mr-auto place-self-center lg:col-span-7 pb-3 bg-lightsage rounded-lg p-4">

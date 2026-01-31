@@ -31,7 +31,7 @@ export default function ProjectCard({title, descr, link, link_name, date, type})
     // </div>
   // );
     return (
-        <div class="flex justify-start flex-col shadow-lg rounded-lg p-2 w-full h-full">
+        <div class="flex justify-start flex-col shadow-lg rounded-lg p-2 w-full h-full cursor-pointer hover:shadow-xl transition-shadow duration-300">
             <div className="flex flex-row justify-between items-center">
                 <h1 class="py-2">{title}</h1>
                 <p className="text-sm p-2 rounded-full bg-lime w-fit">{type}</p>

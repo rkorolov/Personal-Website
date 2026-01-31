@@ -1,57 +1,49 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef, use } from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 const TableOfContents = () => {
-    const [activeSection, setActiveSection] = useState(null);
-    const observerRef = useRef(null);
-    const sections = [
-        { id: 'hero', title: 'Introduction' },
-    ];
+    const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
-        if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
-            observerRef.current = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            // Update active section when a section comes into view
-                            setActiveSection(entry.target.id);
-                        }
-                    });
-                },
-                {
-                    root: null, // observe the viewport
-                    rootMargin: '0px',
-                    threshold: 0.5, // trigger when 50% of the section is visible
-                }
-            );
-            sections.forEach((sectionData) => {
-                const section = document.getElementById(sectionData.id);
-                if (section) {
-                    observerRef.current?.observe(section);
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section');
+            let currentSection = '';
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 0 && rect.bottom >= 0) {
+                    currentSection = section.id;
+                    
                 }
             });
-        }
+            setActiveSection(currentSection);
+        };
 
+        window.addEventListener('scroll', handleScroll);
         return () => {
-            // Cleanup the observer on component unmount
-            observerRef.current?.disconnect();
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
+    const sections = [
+        { id: 'main', title: 'introduction' },
+        { id: 'experience', title: 'experience' },
+        { id: 'projects', title: 'projects' },
+        { id: 'organizations', title: 'organizations' },
+    ];
+
     return (
-        <nav className="fixed top-1/8 left-8 w-48 rounded-md bg-white/70 p-4 shadow-lg backdrop-blur-md">
+        <div className="fixed top-1/4 left-8 w-48 rounded-md bg-white/70 p-4 shadow-lg backdrop-blur-md text-center">
             <ul className="space-y-2">
-                {sections.map((section) => (
+            {sections.map((section) => (
                     <li key={section.id}>
                         <Link
                             href={`#${section.id}`}
                             className={`block p-2 rounded-md ${
                                 activeSection === section.id
-                                    ? 'text-white-500'
-                                    : 'text-gray-500 hover:text-blue-400'
+                                    ? 'text-blue-500 font-bold' // Highlight active section
+                                    : 'text-gray-500 hover:text-blue-400' // Default style for inactive sections
                             }`}
                         >
                             {section.title}
@@ -59,7 +51,7 @@ const TableOfContents = () => {
                     </li>
                 ))}
             </ul>
-        </nav>
+        </div>
     );
 };
 
