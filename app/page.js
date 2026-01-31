@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import Link from "next/link";
 
-//import profile from "./photos/profile.png";
+import profile from "./photos/profile.png";
 
 
 /* import all the icons in Free Solid, Free Regular, and Brands styles */
@@ -25,7 +25,7 @@ export default async function Home() {
 
       <div id="hero" class="w-1/3 max-l-screen h-full text-center flex flex-col p-4 space-y-2 justify-center items-center content-center">
         <div class="h-2/3">
-          {/* <Image class="align-center" src={profile} width={200} height={200}></Image> */}
+          <Image class="align-center" src={profile} width={200} height={200}></Image>
           <p class="text-lg">Ruslana Korolov</p>
           <p class="text-med font-style: italic">Undergraduate</p>
           <p class="text-med">University of Washington</p>
